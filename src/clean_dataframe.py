@@ -6,6 +6,6 @@ def clean_dataframe(df):
     # Remove leading zeros from 'mois' column
     df['mois'] = df['mois'].str.replace(r'^0+', '', regex=True)
     
-    data.columns = [x.lower() for x in data.columns]
+    df.columns = [x.lower() for x in df.columns]
 
     return(df)
